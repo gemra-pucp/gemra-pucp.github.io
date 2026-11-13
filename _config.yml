@@ -3,3 +3,6 @@ description: Grupo estudiantil dedicado al medio ambiente y los recursos hídric
 lang: es
 markdown: kramdown
 permalink: /articulos/:year/:month/:day/:title/
+
+url: "https://gemra-pucp.github.io"
+baseurl: ""
