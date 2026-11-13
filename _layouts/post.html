@@ -1,0 +1,4 @@
+---
+layout: default
+---
+<article class="post"><a class="back" href="{{ '/' | relative_url }}#articulos">← Volver a artículos</a><p class="eyebrow">{{ page.category }}</p><h1>{{ page.title }}</h1><p class="byline">{{ page.date | date: '%d/%m/%Y' }}{% if page.author %} · {{ page.author }}{% endif %}</p><div class="body">{{ content }}</div></article>
