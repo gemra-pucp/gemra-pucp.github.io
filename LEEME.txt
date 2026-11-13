@@ -1,0 +1,10 @@
+GEMRA - PLANTILLA INICIAL PARA GITHUB PAGES + PAGES CMS
+1. Crea una organización en GitHub (recomendado) y el repositorio ORGANIZACION.github.io (o USUARIO.github.io).
+2. Descomprime este ZIP en tu equipo. Sube SU CONTENIDO (no la carpeta contenedora) al nivel principal del repositorio. Asegúrate de subir también .pages.yml (archivo oculto en algunos sistemas).
+3. En Settings > Pages > Build and deployment: Source = Deploy from a branch, Branch = main, Folder = /(root). Guarda.
+4. Comprueba https://ORGANIZACION.github.io/
+5. Ve a https://app.pagescms.org y entra con GitHub. Instala la app solo para el repositorio elegido. La colección 'Artículos' está definida en .pages.yml.
+6. La primera publicación es de PRUEBA. Elimínala o edítala; no es un artículo histórico.
+7. Para migrar WordPress después, se deben convertir los artículos a Markdown, copiar los archivos multimedia y revisar enlaces.
+8. No subas el XML original si contiene suscriptores o información personal. No subas contraseñas ni bases de datos.
+9. Esta plantilla usa el generador Jekyll nativo de GitHub Pages. Si usas un nombre de repositorio distinto a usuario.github.io, la ruta puede requerir configuración adicional de baseurl.

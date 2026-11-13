@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<section class="hero">
+  <span class="eyebrow">MEDIO AMBIENTE · RECURSOS HÍDRICOS · COMUNIDAD</span>
+  <h1>Conocimiento y acción por un futuro sostenible.</h1>
+  <p>Bienvenidos a GEMRA PUCP. Compartimos artículos, actividades e iniciativas académicas relacionadas con el ambiente y el agua.</p>
+  <a class="cta" href="#articulos">Explorar artículos</a>
+</section>
+<section class="content" id="articulos">
+  <div class="sectionhead"><span class="eyebrow">ARCHIVO DE GEMRA</span><h2>Últimas publicaciones</h2></div>
+  <div class="articles">
+    {% for post in site.posts %}
+    <article class="article"><small>{{ post.date | date: '%d/%m/%Y' }}{% if post.category %} · {{ post.category }}{% endif %}</small><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>{% if post.author %}<p>Por {{ post.author }}</p>{% endif %}<a class="read" href="{{ post.url | relative_url }}">Leer artículo →</a></article>
+    {% endfor %}
+  </div>
+</section>

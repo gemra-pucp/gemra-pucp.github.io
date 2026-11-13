@@ -1,0 +1,5 @@
+title: GEMRA PUCP
+description: Grupo estudiantil dedicado al medio ambiente y los recursos hídricos
+lang: es
+markdown: kramdown
+permalink: /articulos/:year/:month/:day/:title/

@@ -1,0 +1,38 @@
+media:
+  input: assets/uploads
+  output: /assets/uploads
+content:
+  - name: posts
+    label: Artículos
+    type: collection
+    path: _posts
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [title, date, author, category]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Título
+        type: string
+        required: true
+      - name: date
+        label: Fecha
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: author
+        label: Autor/a
+        type: string
+      - name: category
+        label: Categoría
+        type: select
+        options:
+          values: [Recursos Hídricos, Medio Ambiente, Novedades, DocuReseñas]
+      - name: body
+        label: Contenido
+        type: rich-text
