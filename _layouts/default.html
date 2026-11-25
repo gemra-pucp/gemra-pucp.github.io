@@ -1,1 +1,24 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title><meta name="description" content="{{ site.description }}"><link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"></head><body><header class="top"><a class="brand" href="{{ '/' | relative_url }}"><span class="mark">◉</span> GEMRA <span class="pucp">PUCP</span></a><nav><a href="{{ '/' | relative_url }}">Inicio</a><a href="{{ '/' | relative_url }}#articulos">Artículos</a></nav></header><main>{{ content }}</main><footer>© {{ 'now' | date: '%Y' }} GEMRA · Sitio académico en desarrollo.</footer></body></html>
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GEMRA PUCP: comunidad estudiantil dedicada a las ciencias hidroambientales, la investigación y la difusión del conocimiento.">
+  <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="header wrap">
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="GEMRA PUCP, inicio"><span class="brand-mark" aria-hidden="true">◒</span><span><strong>GEMRA</strong><small>PUCP</small></span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menú <span aria-hidden="true">☰</span></button>
+  <nav id="navigation" aria-label="Navegación principal"><a href="{{ '/' | relative_url }}#nosotros">Nosotros</a><a href="{{ '/' | relative_url }}#que-hacemos">Qué hacemos</a><a href="{{ '/' | relative_url }}#comunidad">Comunidad</a><a href="{{ '/' | relative_url }}#articulos">Artículos</a><a class="nav-contact" href="mailto:grupo-gemra@pucp.edu.pe">Conversemos</a></nav>
+</header>
+<main id="contenido">{{ content }}</main>
+<footer class="footer wrap"><a class="brand footer-brand" href="{{ '/' | relative_url }}"><span class="brand-mark" aria-hidden="true">◒</span><span><strong>GEMRA</strong><small>PUCP</small></span></a><p>Grupo Estudiantil de Medioambiente<br>y Recursos del Agua</p><div><a href="https://pe.linkedin.com/company/gemra-pucp">LinkedIn</a><a href="https://www.youtube.com/@GEMRAPUCP">YouTube</a><a href="mailto:grupo-gemra@pucp.edu.pe">Contacto</a></div><p class="footer-place">Lima, Perú<br>Comunidad PUCP</p></footer>
+<script src="{{ '/assets/main.js' | relative_url }}" defer></script>
+</body></html>
+
