@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 ---
 <article class="post wrap"><a class="post-back" href="{{ '/' | relative_url }}#articulos">Volver a publicaciones</a><header class="post-header">{% if page.category %}<p class="section-kicker">{{ page.category | escape }}</p>{% endif %}<h1>{{ page.title | escape }}</h1><p class="post-byline"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d/%m/%Y' }}</time>{% if page.author %} · {{ page.author | escape }}{% endif %}</p></header><div class="post-body">{{ content }}</div></article>

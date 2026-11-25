@@ -1,4 +1,4 @@
-﻿const toggle = document.querySelector('.menu-toggle');
+const toggle = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
 toggle.addEventListener('click', () => {
   const open = toggle.getAttribute('aria-expanded') === 'true';
